@@ -17,7 +17,7 @@ permalink: /product-details.amp.html
   <h1 class="display-none   ">Your Basket</h1>
     <div class="commerce-cart-item flex flex-wrap items-center m0 p2 ">
       <div class="col-3 sm-col-2 md-col-2 lg-col-2">
-        <amp-img class="commerce-cart-item-image" src="/img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
+        <amp-img class="commerce-cart-item-image" src="img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
 <div placeholder="" class="commerce-loader"></div>        </amp-img>
       </div>
       <div class="commerce-cart-item-desc px1 col-6 sm-col-7 md-col-7 lg-col-7">
@@ -32,7 +32,7 @@ permalink: /product-details.amp.html
     </div>
     <div class="commerce-cart-item flex flex-wrap items-center m0 p2 ">
       <div class="col-3 sm-col-2 md-col-2 lg-col-2">
-        <amp-img class="commerce-cart-item-image" src="/img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
+        <amp-img class="commerce-cart-item-image" src="img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
 <div placeholder="" class="commerce-loader"></div>        </amp-img>
       </div>
       <div class="commerce-cart-item-desc px1 col-6 sm-col-7 md-col-7 lg-col-7">
@@ -58,26 +58,26 @@ permalink: /product-details.amp.html
         "selectedColor": "black",
           "black": {
             "thumb": {
-              "image1": "/img/e-commerce/product/dark-small-1.jpg",
-              "image2": "/img/e-commerce/product/dark-small-2.jpg",
-              "image3": "/img/e-commerce/product/dark-small-3.jpg"
+              "image1": "img/e-commerce/product/dark-small-1.jpg",
+              "image2": "img/e-commerce/product/dark-small-2.jpg",
+              "image3": "img/e-commerce/product/dark-small-3.jpg"
             },
             "large": {
-              "image1": "/img/e-commerce/product/dark-large-1.jpg",
-              "image2": "/img/e-commerce/product/dark-large-2.jpg",
-              "image3": "/img/e-commerce/product/dark-large-3.jpg"
+              "image1": "img/e-commerce/product/dark-large-1.jpg",
+              "image2": "img/e-commerce/product/dark-large-2.jpg",
+              "image3": "img/e-commerce/product/dark-large-3.jpg"
             }
           },
           "blue": {
             "thumb": {
-              "image1": "/img/e-commerce/product/light-small-1.jpg",
-              "image2": "/img/e-commerce/product/light-small-2.jpg",
-              "image3": "/img/e-commerce/product/light-small-3.jpg"
+              "image1": "img/e-commerce/product/light-small-1.jpg",
+              "image2": "img/e-commerce/product/light-small-2.jpg",
+              "image3": "img/e-commerce/product/light-small-3.jpg"
             },
             "large": {
-              "image1": "/img/e-commerce/product/light-large-1.jpg",
-              "image2": "/img/e-commerce/product/light-large-2.jpg",
-              "image3": "/img/e-commerce/product/light-large-3.jpg"
+              "image1": "img/e-commerce/product/light-large-1.jpg",
+              "image2": "img/e-commerce/product/light-large-2.jpg",
+              "image3": "img/e-commerce/product/light-large-3.jpg"
             }
           },
         "selectedSlide": 0
@@ -88,24 +88,24 @@ permalink: /product-details.amp.html
     <section class="flex flex-wrap pb4 md-pb7">
       <div class="col-12 md-col-6 px2 pt2 md-pl7 md-pt4">
         <amp-carousel width="1280" height="720" layout="responsive" type="slides" [slide]="product.selectedSlide" on="slideChange: AMP.setState({product: {selectedSlide: event.index}})">
-          <amp-img [src]="product[product.selectedColor].large.image1" src="/img/e-commerce/product/dark-large-1.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
+          <amp-img [src]="product[product.selectedColor].large.image1" src="img/e-commerce/product/dark-large-1.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
 <div placeholder="" class="commerce-loader"></div>          </amp-img>
-          <amp-img [src]="product[product.selectedColor].large.image2" src="/img/e-commerce/product/dark-large-2.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
+          <amp-img [src]="product[product.selectedColor].large.image2" src="img/e-commerce/product/dark-large-2.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
 <div placeholder="" class="commerce-loader"></div>          </amp-img>
-          <amp-img [src]="product[product.selectedColor].large.image3" src="/img/e-commerce/product/dark-large-3.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
+          <amp-img [src]="product[product.selectedColor].large.image3" src="img/e-commerce/product/dark-large-3.jpg" width="1280" height="720" layout="responsive" role="button" tabindex="0" alt="product image" noloading="">
 <div placeholder="" class="commerce-loader"></div>          </amp-img>
         </amp-carousel>
 
         <amp-selector class="center" [selected]="product.selectedSlide" on="select:AMP.setState({product: {selectedSlide: event.targetOption}})">
           <ul class="list-reset inline-block">
             <li class="inline-block commerce-product-thumb">
-              <amp-img option="0" layout="responsive" selected="selected" [src]="product[product.selectedColor].thumb.image1" src="/img/e-commerce/product/dark-small-1.jpg" width="320" height="180" alt="thumbnail"></amp-img>
+              <amp-img option="0" layout="responsive" selected="selected" [src]="product[product.selectedColor].thumb.image1" src="img/e-commerce/product/dark-small-1.jpg" width="320" height="180" alt="thumbnail"></amp-img>
             </li>
             <li class="inline-block commerce-product-thumb">
-              <amp-img option="1" layout="responsive" [src]="product[product.selectedColor].thumb.image2" src="/img/e-commerce/product/dark-small-2.jpg" width="320" height="180" alt="thumbnail"></amp-img>
+              <amp-img option="1" layout="responsive" [src]="product[product.selectedColor].thumb.image2" src="img/e-commerce/product/dark-small-2.jpg" width="320" height="180" alt="thumbnail"></amp-img>
             </li>
             <li class="inline-block commerce-product-thumb">
-              <amp-img option="2" layout="responsive" [src]="product[product.selectedColor].thumb.image3" src="/img/e-commerce/product/dark-small-3.jpg" width="320" height="180" alt="thumbnail"></amp-img>
+              <amp-img option="2" layout="responsive" [src]="product[product.selectedColor].thumb.image3" src="img/e-commerce/product/dark-small-3.jpg" width="320" height="180" alt="thumbnail"></amp-img>
             </li>
           </ul>
         </amp-selector>
@@ -280,70 +280,70 @@ permalink: /product-details.amp.html
       <ul class="list-reset">
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-1.jpg" width="1" height="1" layout="responsive" alt="Sprocket Set" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Sprocket Set</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-2.jpg" width="1" height="1" layout="responsive" alt="Fixie Blue" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-2.jpg" width="1" height="1" layout="responsive" alt="Fixie Blue" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Fixie Blue</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-3.jpg" width="1" height="1" layout="responsive" alt="Chain set" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-3.jpg" width="1" height="1" layout="responsive" alt="Chain set" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Chain set</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-4.jpg" width="1" height="1" layout="responsive" alt="Leather Saddle" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-4.jpg" width="1" height="1" layout="responsive" alt="Leather Saddle" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Leather Saddle</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-5.jpg" width="1" height="1" layout="responsive" alt="16-Speed" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-5.jpg" width="1" height="1" layout="responsive" alt="16-Speed" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">16-Speed</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-6.jpg" width="1" height="1" layout="responsive" alt="Red Cruiser" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-6.jpg" width="1" height="1" layout="responsive" alt="Red Cruiser" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Red Cruiser</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-7.jpg" width="1" height="1" layout="responsive" alt="Horn Handles" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-7.jpg" width="1" height="1" layout="responsive" alt="Horn Handles" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Horn Handles</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-8.jpg" width="1" height="1" layout="responsive" alt="Caliper Brakes" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Caliper Brakes</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-9.jpg" width="1" height="1" layout="responsive" alt="Road Bike" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-9.jpg" width="1" height="1" layout="responsive" alt="Road Bike" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Road Bike</h2>
             </a>
           </li>
           <li class="commerce-related-product inline-block mr2">
             <a href="product-details.amp.html" class="text-decoration-none">
-              <amp-img class="mb2" src="/img/e-commerce/product/product-10.jpg" width="1" height="1" layout="responsive" alt="Wheel Set" noloading="">
+              <amp-img class="mb2" src="img/e-commerce/product/product-10.jpg" width="1" height="1" layout="responsive" alt="Wheel Set" noloading="">
 <div placeholder="" class="commerce-loader"></div>              </amp-img>
               <h2 class="commerce-related-product-name h6">Wheel Set</h2>
             </a>
