@@ -1,0 +1,19 @@
+# https://jekyllrb.com/docs/configuration/
+name: AMP Start E-Commerce
+title: AMP Start E-Commerce
+description: This is AMP start ported to Jekyll.
+author: Your Name
+author_email: you@example.com
+url: http://yourdomain.com/
+baseurl: ""
+markdown: kramdown
+permalink: pretty
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+exclude: [package.json, node_modules]
+
+
+sass:
+    sass_dir: _sass
+    style: compressed
